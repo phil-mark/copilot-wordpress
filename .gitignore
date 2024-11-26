@@ -1,0 +1,11 @@
+# Ignore everything
+*
+!*/
+
+# Unignore subdirectory
+!/wp-content/plugins/custom-api/custom-api.php
+
+# Unignore a specific file
+!/README.md
+!.gitignore
+!wp-config.php
