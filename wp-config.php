@@ -48,14 +48,13 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define( 'COPILOT_BASE_URL', 'https://chat-dev.nus.edu.sg/copilot' );
+define( 'REPO_ID', 'KAI-49642647' );
+define( 'SHARING_KEY', 'cf790382dc8d43a1acd8356894f7df7e' );
+define( 'KEY_ID', '052ceec5-19e7-40f3-b1f5-093edc67ee31' );
+define( 'SECRET', 'ffc501908e1a891e2044f90d159bc534c29af188d247da908b617a43f2128ba6' );
+define( 'EXP', '1761709059332' );
+define( 'ENCRYPTION_KEY', 'AfyQLLfTIAVoaTJRKPdP3a+xyl7IcCIVdl3vR8h/hX8=' );
 
 /**#@-*/
 

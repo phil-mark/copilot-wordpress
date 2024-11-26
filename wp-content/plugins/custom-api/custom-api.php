@@ -28,12 +28,12 @@ function custom_api_get_data(WP_REST_Request $request) {
 
 // Main Functionality
 function sign_url(WP_REST_Request $request) {
-    $repo_id = "KAI-49642647";
-    $sharing_key = "cf790382dc8d43a1acd8356894f7df7e";
-    $key_id = "052ceec5-19e7-40f3-b1f5-093edc67ee31";
-    $secret = "ffc501908e1a891e2044f90d159bc534c29af188d247da908b617a43f2128ba6";
-    $exp = "1761709059332";
-    $encryption_key = "AfyQLLfTIAVoaTJRKPdP3a+xyl7IcCIVdl3vR8h/hX8=";
+    $repo_id = REPO_ID;
+    $sharing_key = SHARING_KEY;
+    $key_id = KEY_ID;
+    $secret = SECRET;
+    $exp = EXP;
+    $encryption_key = ENCRYPTION_KEY;
     $nonce = generateNonce();
     $id = "copilot_" . $repo_id . "_" . $sharing_key;
 
@@ -55,9 +55,8 @@ function sign_url(WP_REST_Request $request) {
 }
 
 function generateSignedUrl($obj) {
-    // Assume $base_url is defined somewhere in your code
-    $base_url = "https://chat-dev.nus.edu.sg/copilot";
-	//$base_url = "http://localhost:5173/copilot";
+    // base URL
+    $base_url = COPILOT_BASE_URL;
 
     // Encrypt
     $encryption_key = $obj['encryption_key'];
